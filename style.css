@@ -1,8 +1,8 @@
-/* * {
+* {
     margin: 0px;
     padding: 0px;
     outline: 2px dotted rgb(255, 0, 0);
-} */
+}
 
 #wrapper {
     width: 970px;
@@ -68,8 +68,8 @@ span.pipe {
 
 nav {
     width: 850px;
-    height: 40px;
-    margin: 0 auto;
+    height: 50px;
+    margin: 10px auto;
     background-color: #477fad;
     color: #f8fafc;
     font-size: 24px;
@@ -78,10 +78,73 @@ nav {
     box-shadow: 2px 2px black;
     	
 }
+    nav ul {
+        padding: 7px 0px 0px 0px;
+        margin: 0px;
+    }
     nav ul li {
         display: inline-block;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 24px;
-        margin: 0px 10px;
+        font-size: 22px;
+        margin: 0px 20px;
         vertical-align: middle
+    }
+
+main {
+    margin-top: 20px;
+}
+
+main ul {
+    display: inline-block;
+    width: 400px;
+    list-style-position: inside;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 20px 0;
+    vertical-align: top;
+}
+    ul a {
+        color: #f8fafc;
+    }
+
+    .links li::before {
+        content: "•";
+        padding: 10px;
+        color: #ddbf40;
+    }
+
+    .quotes li {
+        margin: 5px 0;
+        color: #fad032;
+    }
+
+main div {
+    display: inline-block;
+    vertical-align: top;
+    width: 560px;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    color: black;
+}
+hr {
+    width: 400px;
+    height: 5px;
+    background-color: #73a7d5;
+    margin: 0 auto;
+}
+section div {
+    display: inline-block;
+    width: 450px;
+    text-align: center;
+}
+    section div ul {
+        list-style-position: inside;
+        list-style-type: square;
+    }
+    section div ul a {
+        color: #8eb8dd;
     }
