@@ -1,14 +1,12 @@
 * {
     margin: 0px;
     padding: 0px;
-    outline: 2px dotted rgb(255, 0, 0);
 }
 
 #wrapper {
     width: 970px;
-    height: 764px;
+    height: auto;
     margin: 0 auto;
-    padding: 15px;
     background-color: #245076;
     color: #ffffff;
 }
@@ -16,11 +14,12 @@
 header img {
     display: inline-block;
     width: 400px;
+    margin-left: 15px;
 }
 
 header div {
     display: inline-block;
-    width: 565px;
+    width: 550px;
     vertical-align: top;
     font-size: 14px;
 }
@@ -30,18 +29,17 @@ header p {
     text-align: right;
 }
 
-header form {
-    width: 250px;
-    border-width: 15px 30px;
-    border-style: solid; 
-    border-color: #444444;
+header div form {
+    width: 260px;
     border-radius: 10px;
     box-shadow: 2px 2px black;
     box-sizing: border-box;
-    margin-left: 310px;
+    margin-left: 280px;
+    background-color: #444444;
+    padding: 15px 30px;
 }
     header form input {
-        width: 130px;
+        width: 150px;
         height: 25px;
         text-align: center;
         display: inline-block;
@@ -49,13 +47,12 @@ header form {
     header form button {
         width: 35px;
         height: 25px;
+        padding: 5px 5px;
         background-color: #245076;
         color: #d9e1e8;
         border-radius: 3px;
-        border: 2px solid #aeb4b7;
-        outline: 12px solid #444444;
-        margin-left: 10px;
         display: inline-block;
+        margin-left: 5px;
     }
 
 a {
@@ -94,9 +91,9 @@ main {
     margin-top: 20px;
 }
 
-main ul {
+.links {
     display: inline-block;
-    width: 400px;
+    width: 300px;
     list-style-position: inside;
     list-style: none;
     text-align: center;
@@ -104,8 +101,12 @@ main ul {
     margin: 20px 0;
     vertical-align: top;
 }
-    ul a {
+    .links a {
         color: #f8fafc;
+    }
+
+    .links li {
+        margin: 5px;
     }
 
     .links li::before {
@@ -113,12 +114,7 @@ main ul {
         padding: 10px;
         color: #ddbf40;
     }
-
-    .quotes li {
-        margin: 5px 0;
-        color: #fad032;
-    }
-
+    
 main div {
     display: inline-block;
     vertical-align: top;
@@ -126,25 +122,82 @@ main div {
     text-align: center;
 }
 
+    main div p:first-child {
+        width: 550px;
+        font-size: 14px;
+    }
+
+    .quotes {
+        margin: 10px;
+    }
+        .quotes li {
+            margin: 5px 0;
+            color: #fad032;
+            font-size: 20px;
+            list-style-type: none;
+        }
+
+    main div p:last-child {
+        margin-bottom: 20px;
+    }
+
+    
+
 section {
+    width: 850px;
     background-color: white;
     color: black;
+    padding: 10px 60px;
 }
-hr {
-    width: 400px;
-    height: 5px;
-    background-color: #73a7d5;
-    margin: 0 auto;
-}
-section div {
+    
+    section h1 {
+        font-size: 22px;
+    }
+    section div ul {
+        list-style-type: square;
+        width: 250px;
+        margin-left: 50px;
+    }
+
+    section div ul li {
+        text-align: center;
+    }
+    section ul li span {
+        color: #8eb8dd;
+    }
+
+    section hr {
+        width: 380px;
+        height: 2px;
+        background-color: #73a7d5;
+        display: inline-block;
+        margin: 0px -40px;
+    }
+    
+.gettingStarted {
     display: inline-block;
-    width: 450px;
+    width: 330px;
+    text-align: center;
+    margin: 0px 0px 0px 70px;
+}
+
+.applications {
+    display: inline-block;
+    width: 330px;
+    text-align: center;
+    margin-left: 70px
+}
+
+footer {
+    color: #80b3de;
     text-align: center;
 }
-    section div ul {
-        list-style-position: inside;
-        list-style-type: square;
+    footer ul {
+        margin-top: 50px;
+        margin-bottom: 20px;
     }
-    section div ul a {
-        color: #8eb8dd;
+    footer ul li {
+        display: inline-block;
+        margin: 0px 25px;
+
     }
